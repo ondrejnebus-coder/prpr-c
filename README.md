@@ -7,12 +7,11 @@ Procedural Programming (PRPR) at FIIT STU.
 
 ```
 exercises/
-├── 133751_2026_1/   basics: input, arithmetic, conditions
-├── 133751_2026_2/   loops, arrays, functions
-├── 133751_2026_3/   pointers, strings
-├── 133751_2026_4/   structures, files
-├── 133751_2026_5/   dynamic memory, linked lists
-└── 133751_2026_6/   mixed exercises
+├── 133751_2026_1/   input/output, arithmetic, conditions, formatting
+├── 133751_2026_2/   loops, arrays, characters, basic validation
+├── 133751_2026_3/   loops, functions, powers/multiples, number checks
+├── 133751_2026_4/   functions and file I/O
+└── 133751_2026_5/   pointers and functions
 project/
 ├── 133751_projekt_v1.c   passenger-list reader + character histogram
 ├── zoznamCK.txt          sample passenger list
@@ -23,8 +22,9 @@ project/
 
 The program reads commands from stdin:
 
-- `v 1` - prints passengers from `zoznamCK.txt` with a simplified age
-  (`2026 - year of birth`), records separated by a blank line.
+- `v` followed by `1` on the next line - prints passengers from `zoznamCK.txt`
+  with a simplified age (`2026 - year of birth`), records separated by a blank
+  line.
 - `h` - prints a histogram of `zoznamCK.txt`: uppercase letters by frequency,
   lowercase letters alphabetically, digits by frequency, format `char : count`.
 - `k` - exits.
