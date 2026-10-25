@@ -34,11 +34,26 @@ histogram source (`H: Neotvoreny subor.`).
 
 ## Build and run
 
+### Windows (PowerShell)
+
+```powershell
+gcc -std=c11 -Wall -Wextra -Wpedantic project/133751_projekt_v1.c -o projekt.exe
+
+Set-Location project
+"v","1","h","k" | ..\projekt.exe
+Set-Location ..
+```
+
+### Linux / macOS
+
 ```bash
 gcc -std=c11 -Wall -Wextra -Wpedantic project/133751_projekt_v1.c -o projekt
 cd project
 printf 'v\n1\nh\nk\n' | ../projekt
 ```
+
+The program expects `zoznamCK.txt` and `checkin1.txt` in the working directory, so
+run it from `project/`.
 
 The exercises are standalone `.c` files; compile any of them directly:
 
